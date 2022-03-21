@@ -17,17 +17,22 @@ interface Post{
     readonly body: string;
     readonly autor: Autor;
 }
+
+interface PostInterface{
+    readonly post: Post;
+}
+
 const autor: Autor[] = [{name: 'davis', surname: 'cacici'}, {name: 'giacomo', surname: 'dradi'}]
 export const posts: Post[] = [{title: 'hello world', body: 'this is the body', autor: autor[1]}, {title: 'hello world', body: 'this is the body', autor: autor[0]}];
 
-export const Post: React.FunctionComponent<Post> = (props) =>{
-    const {title, body, autor} = props;
+export const PostComponent: React.FunctionComponent<PostInterface> = (props) =>{
+    const {post} = props;
     return <>
     <div className="card">
-        <div>Titolo = {title}</div>
-        <div>Body = {body}</div>
-        <div>Autore = {autor.name} {autor.surname}</div>
-        <hr />
+        <div>Titolo = {post.title}</div>
+        <div>Body = {post.body}</div>
+        <div>Autore = {post.autor.name} {post.autor.surname}</div>
+        <br />
     </div>
     </>;
 }
