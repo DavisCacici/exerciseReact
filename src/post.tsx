@@ -1,10 +1,7 @@
 import React from "react";
 import './index.scss';
 import _ from "lodash";
-// import "./ripasso";
-// import "./lezione2.tsx";
 
-import ReactDOM from 'react-dom';
 
 
 interface Autor{
