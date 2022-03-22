@@ -29,11 +29,16 @@ body {
 
 .button {
     background: #Fff;
-    border-radius: 4px;
+    border-radius: 14px;
     border: 1px solid #ccc;
     padding: 8px;
     margin: 8px;
 }
+.button:hover{
+    border-color: darkcyan;
+    background-color: cyan;
+}
+
 
 .card{
     background: #Fff;
