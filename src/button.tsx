@@ -11,7 +11,7 @@ interface DataProps{
 export const ButtonComponent: React.FunctionComponent<DataProps> = (props) => {
     const {returnFunction, name} = props;
     return <>
-        <button onClick={() => returnFunction()}>{name}</button>
+        <button onClick={() => returnFunction()} className='button'>{name}</button>
     </>;
 }
 
