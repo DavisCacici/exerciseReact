@@ -35,11 +35,12 @@ body {
     margin: 8px;
 }
 .button:hover{
-    border-color: darkcyan;
-    background-color: cyan;
+    border-color: darken(#ccc, 5%);
+    background-color: darken(#Fff, 5%);
 }
 .button:active{
-    background-color: blue;
+    border-color: darken(#ccc, 10%);
+    background-color: darken(#Fff, 10%);
 }
 
 
